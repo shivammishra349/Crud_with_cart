@@ -1,23 +1,39 @@
 <html>
-    <form id="form" onsubmit="crud(event)">
-        <label for="num">Selling Price:</label>
-        <input type="tel" id="num" name="num">
-
-        <label for="name">Product Name:</label>
-        <input type="text" id="name" name="name">
-
-        <input type="submit" value="Add Product">
-
-
-        <h1>Products</h1>
-
+    <body>
         
+    <head>
+    <title>Seller Admin</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"  href="style.css">
+    </head>
+    <div align="center"  > 
+     <h1 style="font-weight:bold">ADD PRODUCTS TO SELL</h1>
+    <form id="form" onsubmit="crud(event)">
+        <div class="row">
+        <div class="col">
+        <label for="num">Selling Price:</label>
+        <input type="tel" class="form-control" placeholder="Enter Product Price" id="num" name="num" required>
+        </div>
+        <div class="col">
+        <label for="name">Product Name:</label>
+        <input type="text"  class="form-control" id="name" placeholder="Enter Product Name" name="name" required>
+        </div>
+        </div><br>
+
+        <input type="submit" float="center" class="btn btn-primary mb-2" value="Add Product">
+        <br><br>
+        <h1 style="font-weight:bold" style="color:green">ADDED PRODUCTS</h1>
     </form>
-    <ul id="listItem"></ul>
-    <h2 id="TotalCost"></h2>
+</div>
+    
+        <ul  id="listItem"></ul>
+        <h2 id="TotalCost"></h2>
+        
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.3/axios.min.js"></script>
     <script src="index.js"></script>
 
     <!-- <h2 id="total">Total Value Worth of Product:</h2> -->
-
+</body>
 </html>

@@ -1,0 +1,30 @@
+form{
+    padding:20px;
+   ;
+}
+
+#num{
+    font-weight: bold;
+    height:50px;
+    
+}
+#name{
+    font-weight:bold;
+    height:50px;
+}
+label[for="num"]{
+    font-style:italic
+}
+label[for="name"]{
+    font-style:italic
+}
+ul{
+    margin-left:150px
+}
+h2{
+    margin-left:150px
+}
+body{
+    padding:100px;
+    background-color:gray;
+}
